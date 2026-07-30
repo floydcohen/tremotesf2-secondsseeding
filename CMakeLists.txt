@@ -2,8 +2,8 @@
 #
 # SPDX-License-Identifier: CC0-1.0
 
-cmake_minimum_required(VERSION 3.25)
-cmake_policy(VERSION ${CMAKE_MINIMUM_REQUIRED_VERSION}...4.1)
+cmake_minimum_required(VERSION 3.31)
+cmake_policy(VERSION ${CMAKE_MINIMUM_REQUIRED_VERSION}...4.4)
 
 include(cmake/VcpkgHostTriplet.cmake)
 
@@ -15,7 +15,7 @@ if (APPLE)
     set(CMAKE_OSX_DEPLOYMENT_TARGET "${TREMOTESF_MACOS_DEPLOYMENT_TARGET}")
 endif ()
 
-project(tremotesf VERSION 2.9.1 LANGUAGES ${languages})
+project(tremotesf VERSION 2.10.1 LANGUAGES ${languages})
 
 option(TREMOTESF_ASAN "Build with AddressSanitizer" OFF)
 
